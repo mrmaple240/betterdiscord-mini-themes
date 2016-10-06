@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.2"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.22"}*//{}
 
 .account {
     border-top: 1px solid rgba(180,180,180,.4) !important;
@@ -35,8 +35,8 @@
 }
 .account .account-details {
     position: fixed;
-    left: 160px;
-    max-width: 140px;
+    left: 170px;
+    max-width: 130px;
     clip: rect(0px,148px,32px,0px);
     transition: opacity 500ms, clip 300ms;
 }
