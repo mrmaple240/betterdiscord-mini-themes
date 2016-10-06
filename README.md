@@ -1,6 +1,6 @@
 # BetterDiscord-Mini-Themes
 
-<h1>Compact Account Mini Theme</h1>
+<h2>Compact Account Mini Theme</h2>
 
 <img src="https://a.pomf.cat/zzpani.png"/>
 <p></p>
