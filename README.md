@@ -1,0 +1,1 @@
+# betterdiscord-mini-themes
