@@ -1,0 +1,102 @@
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.0"}*//{}
+
+.account {
+    border-top: 1px solid rgba(180,180,180,.4) !important;
+}
+.account .avatar-small {
+    left: -10px;
+    width: 68px;
+    height: 68px;
+    background-size: 100%;
+    border: 2px solid rgba(249, 249, 249,.9);
+    border-radius: 0;
+    border-right-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.account .avatar-small:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(15%);
+}
+.account .btn-group {
+    position: fixed;
+    left: 180px;
+    opacity: 0;
+    transition: opacity 250ms;
+}
+.account:hover .btn-group {
+    opacity: 1;
+    transition: opacity 200ms;
+    transition-delay: 150ms;
+}
+#voice-connection .btn, .account .btn {
+    height: 40px;
+    width: 40px;
+}
+.account .account-details {
+    position: fixed;
+    left: 160px;
+    max-width: 140px;
+    clip: rect(0px,148px,32px,0px);
+    transition: opacity 500ms, clip 300ms;
+}
+.account:hover .account-details {
+    opacity: 0;
+    clip: rect(0px,0px,32px,0px);
+    transition: opacity 500ms, clip 250ms;
+}
+.account .account-details .username {
+    font-size: 18px;
+    max-width: 150px;
+    text-shadow: 1px 1.35px 1.5px rgba(20,20,28,.3);
+}
+.account .account-details .discriminator {
+    font-size: 13px;
+}
+.account .status {
+    border: none;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    height: 68px;
+    bottom: -2px;
+    left: 69px;
+    box-shadow: inset 0 0 0 1.2px rgba(220,220,220,.2);
+    border-top: 2px solid #f9f9f9;
+    border-bottom: 2px solid #f9f9f9;
+    border-right: 2px solid #f9f9f9;
+    border-color: #f9f9f9 !important;
+}
+
+div.popout.popout-top {
+    top: inherit !important;
+    bottom: 0px;
+    left: 80px !important;
+    transform: none !important;
+}
+.popout-menu {
+    left: 20px;
+    height: 67px;
+    width: 67px;
+    display: flex;  
+    flex-wrap: wrap;
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px solid rgba(0,0,0,0);
+}
+.popout-menu .popout-menu-item {
+    height: 34px;
+    width: 33.5px;
+    padding: 0;
+}
+.popout-menu-item .status {
+    height: 34px;
+    width: 34px;
+    box-shadow: inset 0 0 0 3px rgba(220,220,220,.2);
+    border-radius: 0;
+}
+.status-picker .popout-menu-item .helper {
+    display: none;
+}
