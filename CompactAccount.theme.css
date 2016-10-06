@@ -75,7 +75,7 @@ div.popout.popout-top {
     left: 80px !important;
     transform: none !important;
 }
-.popout-menu {
+.popout.popout-top .popout-menu {
     left: 20px;
     height: 67px;
     width: 67px;
@@ -86,12 +86,12 @@ div.popout.popout-top {
     border-bottom-left-radius: 5px;
     border: 2px solid rgba(0,0,0,0);
 }
-.popout-menu .popout-menu-item {
+.popout.popout-top .popout-menu .popout-menu-item {
     height: 34px;
     width: 33.5px;
     padding: 0;
 }
-.popout-menu-item .status {
+.popout.popout-top .popout-menu-item .status {
     height: 34px;
     width: 34px;
     box-shadow: inset 0 0 0 3px rgba(220,220,220,.2);
