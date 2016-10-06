@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.0"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.2"}*//{}
 
 .account {
     border-top: 1px solid rgba(180,180,180,.4) !important;
@@ -71,7 +71,7 @@
 
 div.popout.popout-top {
     top: inherit !important;
-    bottom: 0px;
+    bottom: -82px !important;
     left: 80px !important;
     transform: none !important;
 }
