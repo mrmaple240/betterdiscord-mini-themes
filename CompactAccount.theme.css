@@ -1,22 +1,32 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.22"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.5"}*//{}
+
 
 .account {
     border-top: 1px solid rgba(180,180,180,.4) !important;
 }
+.channels-wrap:before {
+    position: absolute;
+    width: 70px;
+    height: 72px;
+    left: 80px;
+    bottom: 0px;
+    content: ' ';
+    z-index: 1;
+}
 .account .avatar-small {
     left: -10px;
-    width: 68px;
+    width: 80px;
     height: 68px;
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position-x: 1px;
     border: 2px solid rgba(249, 249, 249,.9);
-    border-radius: 0;
     border-right-width: 1px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 3px;
+    overflow: visible;
+    z-index: 0;
 }
 .account .avatar-small:hover {
     opacity: 1;
-    -webkit-filter: grayscale(15%);
 }
 .account .btn-group {
     position: fixed;
@@ -38,7 +48,7 @@
     left: 170px;
     max-width: 130px;
     clip: rect(0px,148px,32px,0px);
-    transition: opacity 500ms, clip 300ms;
+    transition: opacity 400ms, clip 350ms;
 }
 .account:hover .account-details {
     opacity: 0;
@@ -56,8 +66,8 @@
 .account .status {
     border: none;
     border-radius: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     position: absolute;
     height: 68px;
     bottom: -2px;
@@ -70,10 +80,23 @@
 }
 
 div.popout.popout-top {
-    top: inherit !important;
-    bottom: -82px !important;
+    overflow: visible !important;
+    top: calc(100% - 57px) !important;
+    width: 72px !important;
     left: 80px !important;
     transform: none !important;
+    animation: popout-top 250ms ease-in;
+}
+@keyframes popout-top {
+    0%{
+    clip: rect(0px,72px,72px,72px);
+    }
+    7%{
+    clip: rect(0px,72px,72px,68px);
+    }
+    100%{
+    clip: rect(0px,72px,72px,0px);
+    }
 }
 .popout.popout-top .popout-menu {
     left: 20px;
@@ -82,9 +105,9 @@ div.popout.popout-top {
     display: flex;  
     flex-wrap: wrap;
     border-radius: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 2px solid rgba(0,0,0,0);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 2px solid transparent;
 }
 .popout.popout-top .popout-menu .popout-menu-item {
     height: 34px;
@@ -94,7 +117,7 @@ div.popout.popout-top {
 .popout.popout-top .popout-menu-item .status {
     height: 34px;
     width: 34px;
-    box-shadow: inset 0 0 0 3px rgba(220,220,220,.2);
+    box-shadow: inset 0 0 0 2px rgba(230,230,230,.3);
     border-radius: 0;
 }
 .status-picker .popout-menu-item .helper {
