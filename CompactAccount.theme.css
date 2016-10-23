@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"1.5"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.0"}*//{}
 
 
 .account {
@@ -29,8 +29,8 @@
     opacity: 1;
 }
 .account .btn-group {
-    position: fixed;
-    left: 180px;
+    position: relative;
+    left: -55px;
     opacity: 0;
     transition: opacity 250ms;
 }
@@ -44,8 +44,8 @@
     width: 40px;
 }
 .account .account-details {
-    position: fixed;
-    left: 170px;
+    position: relative;
+    left: 0px;
     max-width: 130px;
     clip: rect(0px,148px,32px,0px);
     transition: opacity 400ms, clip 350ms;
@@ -122,4 +122,76 @@ div.popout.popout-top {
 }
 .status-picker .popout-menu-item .helper {
     display: none;
+}
+
+.bd-minimal .account .avatar-small, .bd-minimal .account .username,
+ .bd-minimal.bd-minimal-chan .channels-wrap {
+    display: inherit;
+}
+.bd-minimal .channels-wrap:before {
+    left: 45px;
+}
+.bd-minimal .account {
+    max-width: 160px;
+    height: 48px;
+}
+.bd-minimal .account .avatar-small {
+    height: 46px;
+    width: 55px;
+}
+.bd-minimal .channels-wrap:before  {
+    height: 49px;
+    width: 47px;
+}
+.bd-minimal .account .status {
+    height: 46px;
+    width: 8px;
+    left: 46px;
+}
+.bd-minimal #voice-connection .btn, .bd-minimal .account .btn {
+    height: 28px;
+    width: 28px;
+}
+.bd-minimal .account .btn-group {
+    left: -63px;
+}
+.bd-minimal .account .account-details {
+    max-width: 85px;
+    left: -10px;
+}
+.bd-minimal .account .account-details .username {
+    font-size: 16px;
+    max-width: 150px;
+    text-shadow: 1px 1.35px 1.5px rgba(20,20,28,.3);
+}
+.bd-minimal .account .account-details .discriminator {
+    font-size: 11px;
+}
+.bd-minimal div.popout.popout-top {
+    width: 46px !important;
+    left: 80px !important;
+    animation: mini-popout-top 350ms ease-in;
+}
+.bd-minimal .popout.popout-top .popout-menu {
+    margin-left: -35px;
+    margin-top: 22px;
+    height: 46px;
+    width: 46px;
+    border-right-width: 1px;
+}
+.bd-minimal .popout.popout-top .popout-menu .popout-menu-item {
+    height: 23px;
+    width: 22.5px;
+}
+.bd-minimal .popout.popout-top .popout-menu-item .status {
+    height: 23px;
+    width: 34px;
+}
+@keyframes mini-popout-top {
+    0%{
+    clip: rect(0px,46px,46px,46px);
+    }
+    100%{
+    clip: rect(0px,46px,46px,0px);
+    }
 }
