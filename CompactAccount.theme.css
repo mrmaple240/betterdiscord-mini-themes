@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.1"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.2"}*//{}
 
 
 .account {
@@ -172,6 +172,10 @@ div.popout.popout-top {
     width: 46px !important;
     left: 80px !important;
     animation: mini-popout-top 350ms ease-in;
+    pointer-events: none;
+}
+.bd-minimal div.popout.popout-top * {
+    pointer-events: auto;
 }
 .bd-minimal .popout.popout-top .popout-menu {
     margin-left: -35px;
