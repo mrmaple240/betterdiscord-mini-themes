@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.5"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.51"}*//{}
 
 
 .account {
@@ -17,8 +17,8 @@
     left: -10px;
     width: 80px;
     height: 68px;
-    background-size: auto 100%;
-    background-position-x: 1px;
+    background-size: 69px;
+    background-position-x: 0px;
     border: 2px solid rgba(249, 249, 249,.9);
     border-right-width: 1px;
     border-radius: 3px;
@@ -137,6 +137,7 @@ div.popout.popout-top {
 .bd-minimal .account .avatar-small {
     height: 46px;
     width: 55px;
+    background-size: 46px;
 }
 .bd-minimal .channels-wrap:before  {
     height: 49px;
