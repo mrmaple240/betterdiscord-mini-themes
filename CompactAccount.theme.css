@@ -30,7 +30,7 @@
 }
 .account .btn-group {
     position: relative;
-    left: -138px;
+    left: -141px;
     opacity: 0;
     transition: opacity 250ms;
 }
@@ -45,7 +45,7 @@
 }
 .account .account-details {
     position: relative;
-    left: 0px;
+    left: -4px;
     max-width: 130px;
     -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
     transition: opacity 400ms, -webkit-clip-path 350ms;
