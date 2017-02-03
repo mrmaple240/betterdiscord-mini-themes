@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.51"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.52"}*//{}
 
 
 .account {
@@ -30,7 +30,7 @@
 }
 .account .btn-group {
     position: relative;
-    left: -55px;
+    left: -138px;
     opacity: 0;
     transition: opacity 250ms;
 }
@@ -47,17 +47,18 @@
     position: relative;
     left: 0px;
     max-width: 130px;
-    clip: rect(0px,148px,32px,0px);
-    transition: opacity 400ms, clip 350ms;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+    transition: opacity 400ms, -webkit-clip-path 350ms;
 }
 .account:hover .account-details {
     opacity: 0;
-    clip: rect(0px,0px,32px,0px);
-    transition: opacity 500ms, clip 250ms;
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 0% 100%, 0% 0%);
+    transition: opacity 200ms, -webkit-clip-path 250ms;
 }
 .account .account-details .username {
     font-size: 18px;
-    max-width: 150px;
+    width:130px;
+    max-width: 130px;
     text-shadow: 1px 1.35px 1.5px rgba(20,20,28,.3);
 }
 .account .account-details .discriminator {
