@@ -1,4 +1,4 @@
-//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.52"}*//{}
+//META{"name":"Compact_Account","description":"edits for that account thingy under the channels","author":"maple","version":"2.53"}*//{}
 
 
 .account {
@@ -39,7 +39,7 @@
     transition: opacity 200ms;
     transition-delay: 150ms;
 }
-#voice-connection .btn, .account .btn {
+#rtc-connection .btn, .account .btn {
     height: 40px;
     width: 40px;
 }
@@ -149,7 +149,7 @@ div.popout.popout-top {
     width: 8px;
     left: 46px;
 }
-.bd-minimal #voice-connection .btn, .bd-minimal .account .btn {
+.bd-minimal #rtc-connection .btn, .bd-minimal .account .btn {
     height: 28px;
     width: 28px;
 }
