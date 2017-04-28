@@ -1,4 +1,6 @@
-# BetterDiscord-Mini-Themes
+# Mutual Server Server Count
 
-<h2>Compact Account Mini Theme</h2>
-<img src="https://a.pomf.cat/twppab.gif" width="240" height="72">
+### Mutual Servers Server Count
+
+![alt text](https://raw.githubusercontent.com/mrmaple240/theme-preview-images/master/Discord_2017-04-27_21-49-10.png "Mutual Servers Server count preview")
+
