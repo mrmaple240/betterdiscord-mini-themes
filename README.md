@@ -1,5 +1,4 @@
-# Mini Themes
-###### - Theme files that'll probably work on top of full styled themes.
+# Mini Themes ###### - Theme files that'll probably work on top of full styled themes.
 
 
 ### Mutual Servers Server Count
