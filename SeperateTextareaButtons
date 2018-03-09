@@ -1,0 +1,20 @@
+//META{"name":"SeperateTextareaButtons","description":"Seperates Upload and Emoji buttons outside of the text area block,sets a fixed height to the Textarea and to the Account Container to the left of it","author":"maple#1234","version":"1.0"}*//{}
+
+.container-iksrDt{height:80px;margin-bottom:0}
+.chat .content form{margin:0;box-shadow:none;background:rgba(14,15,17,.3);}
+.chat form>div:not([class*=typing]){margin:7px 0 7px 8px;}
+.chat .inner-3if5cm:not(span){background:unset!important;border-radius:0;}
+.chat form>div{pointer-events:none}
+.chat form>div>div *{pointer-events:auto}
+.chat .inner-3if5cm>textarea{padding:0;margin:0 42px 0 0;border:solid transparent;border-width:8px 12px;height:50px!important;background:rgba(223,225,230,.06);border-radius:4px}
+.chat form .inner-3if5cm>textarea{padding:0;margin:0 38px 0 0;background:rgba(238,240,243,.03);}
+form .inner-3if5cm>.autocomplete-1TnWNR{right:38px;bottom:calc(100% - 4px);background:#303237;border-radius:4px 4px 0 0}
+form .inner-3if5cm>.autocomplete-1TnWNR .selectorSelected-2M0IGv{background:#494b54}
+form .inner-3if5cm>.emojiButton-38mF6t{top:6px;right:8px;filter:drop-shadow(0 0 4px rgba(0,0,0,.8));}
+form .inner-3if5cm>.flex-lFgbSz{order:2;width:24px;height:24px;position:absolute;bottom:5px;right:7px;filter:drop-shadow(0 0 4px rgba(0,0,0,.8));transform:scale(1.092);}
+form .inner-3if5cm>.flex-lFgbSz svg{margin:0;}
+form .inner-3if5cm>.flex-lFgbSz svg:hover{transform: scale3d(1.26,1.26,1.26);}
+form .inner-3if5cm>.flex-lFgbSz svg path{opacity:.23}
+form .inner-3if5cm>.flex-lFgbSz svg:hover path{opacity:.7}
+form .inner-3if5cm>.flex-lFgbSz div{display:none}
+.chat form>[class*=typing]{bottom:unset;top:-18px;right:16px;left:unset;height:16px;line-height:16px;width:auto;background:rgba(14,15,17,.3);padding:2px 8px 0;border-radius:14px 14px 0 0/8px 8px 0 0;}
